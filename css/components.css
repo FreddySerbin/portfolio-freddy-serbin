@@ -260,7 +260,8 @@
 
 /* Button with icon */
 .btn--icon {
-  gap: var(--spacing-sm);
+  gap: var(--spacing-md);
+  flex-direction: row;
 }
 
 .btn--icon svg {
@@ -367,6 +368,17 @@
 .hero {
   position: relative;
   overflow: hidden;
+  padding: var(--spacing-xl) 0;
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.hero__image-container {
+  width: 100%;
 }
 
 .hero__image {
@@ -377,11 +389,12 @@
 
 .hero__content {
   background-color: var(--color-white);
-  padding: var(--spacing-xl) 0;
+  padding: var(--spacing-lg) 0;
 }
 
 .hero__title {
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.1;
 }
 
 .hero__description {
@@ -390,25 +403,23 @@
 
 @media (min-width: 768px) {
   .hero__content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    max-width: 445px;
-    padding: var(--spacing-3xl) var(--spacing-2xl);
+    padding: var(--spacing-2xl) 0;
   }
 }
 
 @media (min-width: 1110px) {
   .hero {
+    padding: var(--spacing-4xl) 0;
+  }
+  
+  .hero__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: var(--spacing-4xl);
+    gap: 125px;
   }
   
   .hero__content {
-    position: static;
-    max-width: none;
     padding: 0;
   }
 }

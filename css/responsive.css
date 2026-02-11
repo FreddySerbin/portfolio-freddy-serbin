@@ -186,17 +186,11 @@
   }
   
   /* Hero Section - Side by side layout */
-  .hero {
+  .hero__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: var(--spacing-4xl);
-    margin-bottom: var(--spacing-4xl);
-  }
-  
-  .hero__image {
-    max-width: 540px;
-    width: 100%;
   }
   
   .hero__content {
@@ -204,6 +198,16 @@
     max-width: none;
     padding: 0;
     background-color: transparent;
+    order: 1;
+  }
+  
+  .hero__image-container {
+    order: 2;
+  }
+  
+  .hero__image {
+    max-width: 540px;
+    width: 100%;
   }
   
   /* About Section - Wider layout */

@@ -190,7 +190,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: var(--spacing-4xl);
+    gap: 125px;
   }
   
   .hero__content {
@@ -198,11 +198,6 @@
     max-width: none;
     padding: 0;
     background-color: transparent;
-    order: 1;
-  }
-  
-  .hero__image-container {
-    order: 2;
   }
   
   .hero__image {
